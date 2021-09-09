@@ -39,7 +39,7 @@ class SetUpExtensionsTask extends AbstractCliTask
 
         $commandArguments = [$scriptFileName];
         if (empty($options['extensionKeys'])) {
-            $commandArguments[] = 'extension:setupactive';
+            $commandArguments[] = 'extension:setup';
         } else {
             $commandArguments[] = 'extension:setup';
             $commandArguments[] = implode(',', $options['extensionKeys']);
